@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class PassFail 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the marks:");
+		float mark= sc.nextFloat();
+        float percentage = (mark/600)*100;
+		String ans = (percantage>=75)?"Grade A with "+percentage+"%":
+					 (percantage>=60)?"Grade B with "+percentage+"%":
+					 (percantage>=35)?"Grade C with "+percentage+"%":
+					 "FAILED";
+		System.out.println(ans);
+	}
+}
