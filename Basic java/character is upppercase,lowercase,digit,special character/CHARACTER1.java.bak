@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class CHARACTER1 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ENTER A CHARACTER:");
+		char ch = sc.next().charAt(0);
+		String op=(ch>='A'&& ch<='Z'||ch>='a'&& ch<='z')?((ch>='A'&& ch<='Z')?(ch+ "is an Uppercase Alphabet"):(ch+ "is a Lowercase Alphabet")):((ch>='0'&& ch<='9')?(ch+"is an digit"):(ch+"is an special character"));
+		System.out.println(op);
+		String ans = (ch>='A'&& ch<='Z')?(ch+"is a uppercase"):((ch>='a'&&ch<='z')?(ch+ "is lowercase"):((ch>='0'&&ch<='9')?(ch+"is a didgit"):(ch+ "is a special character")));
+		System.out.print(ans);
+	}
+}
